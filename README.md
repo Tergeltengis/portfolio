@@ -584,8 +584,8 @@ Metadata type = {
 }
 /* Add or modify the title here depending on the chosen languages: */
 export const maintitle: Metadata = {
-   en: 'Next.js i18n Starter Blog',
-  fr: 'Starter Blog Next.js i18n',
+   en: 'Blog',
+  fr: 'Blog',
 }
 /* Add or modify the description here depending on the chosen languages: */
 export const maindescription: Metadata = {
