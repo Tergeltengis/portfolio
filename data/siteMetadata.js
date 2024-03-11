@@ -6,7 +6,7 @@ const siteMetadata = {
   description: 'A blog created with Next.js, i18n and Tailwind.css',
   language: 'en',
   theme: 'system', // system, dark or light
-  siteUrl: 'portfolio-tergeltengis1.vercel.app',
+  siteUrl: 'https://portfolio-tergeltengis1.vercel.app/',
   siteRepo: 'https://github.com/Tergeltengis/portfolio',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',

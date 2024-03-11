@@ -1,5 +1,4 @@
 'use client'
-
 import Link from './Link'
 import siteMetadata from '@/data/siteMetadata'
 import { maintitle } from '@/data/localeMetadata'
