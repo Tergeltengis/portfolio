@@ -17,18 +17,6 @@ And also, I love the idea of helping other developers to quickly start sharing t
 
 I also designed a much more complete template for artists, content creators and developers, which I m'using for my own site and which is available here :
 
-Normal version :
-
-- [Pablo Pikassiet Next Starter](https://github.com/PxlSyl/pablo-pikassiet-next-starter)
-
-I18 version :
-
-- [Pablo Pikassiet Next Starter I18n](https://github.com/PxlSyl/pablo-pikassiet-next-starter-i18n)
-
-My own website based on this new template :
-
-- [PxlSyl.art](https://www.pxlsyl.art/)
-
 # Changes:
 
 ## New features
@@ -813,4 +801,4 @@ Important notes:
 - Do not update dependencies: this will break your application since some things need to be fixed on the side of these libraries
   ​
 
-Author: [pxlsyl](https://pxlsyl.art)
+Author: [tergeltengis](https://tergeltengis.art)
