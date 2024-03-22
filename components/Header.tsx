@@ -3,7 +3,8 @@
 import { useParams, usePathname } from 'next/navigation'
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo.svg'
+// import Logo from '@/data/logo.svg'
+
 import Link from './Link'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
@@ -11,13 +12,14 @@ import LangSwitch from './LangSwitch'
 import SearchButton from './search/SearchButton'
 import { useTranslation } from 'app/[locale]/i18n/client'
 import type { LocaleTypes } from 'app/[locale]/i18n/settings'
+import { Logo } from '@/data/logo'
+import { useTheme } from 'next-themes'
 
 const Header = () => {
   const locale = useParams()?.locale as LocaleTypes
   const { t } = useTranslation(locale, '')
-  // Get current page path
   const pathname = usePathname()
-
+  const { resolvedTheme } = useTheme()
   return (
     <header>
       <div className="flex items-center justify-between py-10">
@@ -25,10 +27,10 @@ const Header = () => {
           <Link href={`/${locale}/`} aria-label={siteMetadata.headerTitle}>
             <div className="flex items-center justify-between">
               <div className="mr-3">
-                <Logo />
+                <Logo color={resolvedTheme === 'dark' ? 'white' : 'black'} />
               </div>
               {typeof siteMetadata.headerTitle === 'string' ? (
-                <div className="hidden h-6 text-2xl font-semibold sm:block">
+                <div className="mt-[-10px] hidden h-6 text-2xl font-semibold sm:block">
                   {siteMetadata.headerTitle}
                 </div>
               ) : (
